@@ -16,20 +16,20 @@ type Status struct {
     Os              string         `json:"os"`
     PlatformVersion string         `json:"platformVersion"`
     ActiveProcesses uint64         `json:"activeProcesses"`
-	Uptime          uint64         `json:"uptime"`
-	TotalRAM        uint64         `json:"totalRAM"`
-	AvailableRAM    uint64         `json:"availableRAM"`
-	UsedRAM         uint64         `json:"usedRAM"`
-	UsedRAMPercent  float64        `json:"usedRAMPercent"`
+    Uptime          uint64         `json:"uptime"`
+    TotalRAM        uint64         `json:"totalRAM"`
+    AvailableRAM    uint64         `json:"availableRAM"`
+    UsedRAM         uint64         `json:"usedRAM"`
+    UsedRAMPercent  float64        `json:"usedRAMPercent"`
     TotalDisk       uint64         `json:"totalDisk"`
     FreeDisk        uint64         `json:"freeDisk"`
     UsedDisk        uint64         `json:"usedDisk"`
     UsedDiskPercent float64        `json:"usedDiskPercent"`
-	CPUModel        string         `json:"CPUModel"`
-	CPUCores        int32          `json:"CPUcores"`
-	GoVersion       string         `json:"goVersion"`
-	GoPlatform      string         `json:"goPlatform"`
-	GoArchitecture  string         `json:"goArchitecture"`
+    CPUModel        string         `json:"CPUModel"`
+    CPUCores        int32          `json:"CPUcores"`
+    GoVersion       string         `json:"goVersion"`
+    GoPlatform      string         `json:"goPlatform"`
+    GoArchitecture  string         `json:"goArchitecture"`
 }
 
 func getMachineStatus() Status {
