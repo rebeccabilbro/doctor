@@ -36,13 +36,13 @@ func getMachineStatus() Status {
     o, err := host.Info()
     if err != nil {
         fmt.Println("Could not retrieve OS details.")
-		log.Fatal(err)
+        log.Fatal(err)
 	}
 
     m, err := mem.VirtualMemory()
     if err != nil {
         fmt.Println("Could not retrieve RAM details.")
-		log.Fatal(err)
+        log.Fatal(err)
 	}
 
     d, err := disk.Usage("/")
